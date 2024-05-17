@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    },
+    "scripts": {
+        "lint:php": "vendor/bin/psalm",
+        "lint:php:fix": "vendor/bin/psalter --issues=all"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.24"
+    }
+}
