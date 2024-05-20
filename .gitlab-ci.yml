@@ -1,0 +1,37 @@
+stages:
+  - build
+  - lint
+
+cache:
+  paths:
+    - .tmp/
+    - vendor/
+    - web/
+
+composer:
+  stage: build
+  image: composer:2.4
+  # Some helpful debugging
+  before_script:
+    - php -v
+    - composer --version
+  script:
+    - composer install --ignore-platform-reqs
+
+psalm:
+  stage: lint
+  extends: composer
+  needs:
+    - composer
+  interruptible: true
+  script: |
+    set +euo pipefail  # don't abort if any following command fails
+    vendor/bin/psalm --report=logs/psalm-junit.xml
+    vendor/bin/psalm --report=logs/psalm.json
+  artifacts:
+    when: always
+    paths:
+      - logs/*
+    reports:
+      junit: logs/psalm-junit.xml
+      codequality: logs/psalm.json
