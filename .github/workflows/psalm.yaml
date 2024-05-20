@@ -1,0 +1,21 @@
+name: Psalm
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  phpstan:
+    name: "🧹 Psalm"
+    runs-on: ubuntu-latest
+    steps:
+    - name: "☁️ checkout repository"
+      uses: actions/checkout@v4
+
+    - name: "🧹 Run Psalm"
+      uses: docker://ghcr.io/psalm/psalm-github-actions
+      # with:
+      #   security_analysis: true
