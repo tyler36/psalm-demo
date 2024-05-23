@@ -1,0 +1,6 @@
+{
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "getpsalm.psalm-vscode-plugin"
+  },
+}

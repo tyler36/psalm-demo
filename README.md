@@ -197,4 +197,11 @@ vendor/bin/psalm --taint-analysis --set-baseline=psalm-tainted-baseline.xml
 
 ## VsCode
 
-[getpsalm.psalm-vscode-plugin](https://marketplace.visualstudio.com/items?itemName=getpsalm.psalm-vscode-plugin)
+Homepage: [getpsalm.psalm-vscode-plugin](https://marketplace.visualstudio.com/items?itemName=getpsalm.psalm-vscode-plugin)
+
+```json
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "getpsalm.psalm-vscode-plugin"
+  },
+```
