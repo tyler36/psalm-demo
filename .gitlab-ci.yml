@@ -21,17 +21,11 @@ composer:
 psalm:
   stage: lint
   extends: composer
-  needs:
-    - composer
-  interruptible: true
-  script: |
-    set +euo pipefail  # don't abort if any following command fails
-    vendor/bin/psalm --report=logs/psalm-junit.xml
-    vendor/bin/psalm --report=logs/psalm.json
+  script:
+  - vendor/bin/psalm --report=logs/psalm-junit.xml
   artifacts:
     when: always
     paths:
-      - logs/*
+      - logs/psalm-junit.xml
     reports:
       junit: logs/psalm-junit.xml
-      codequality: logs/psalm.json
