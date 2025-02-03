@@ -16,6 +16,8 @@ jobs:
         steps:
             - name: '☁️ checkout repository'
               uses: actions/checkout@v4
+              with:
+                  persist-credentials: false
 
             - name: '🧹 Run Psalm'
               uses: docker://ghcr.io/psalm/psalm-github-actions
