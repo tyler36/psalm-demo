@@ -1,21 +1,25 @@
-name: Psalm
+name: linting
 
 on:
-  workflow_dispatch:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    workflow_dispatch:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+permissions: {}
 
 jobs:
-  phpstan:
-    name: "🧹 Psalm"
-    runs-on: ubuntu-latest
-    steps:
-    - name: "☁️ checkout repository"
-      uses: actions/checkout@v4
+    phpstan:
+        name: '🧹 Psalm'
+        runs-on: ubuntu-latest
+        steps:
+            - name: '☁️ checkout repository'
+              uses: actions/checkout@v4
+              with:
+                  persist-credentials: false
 
-    - name: "🧹 Run Psalm"
-      uses: docker://ghcr.io/psalm/psalm-github-actions
-      # with:
-      #   security_analysis: true
+            - name: '🧹 Run Psalm'
+              uses: docker://ghcr.io/psalm/psalm-github-actions:latest
+              # with:
+              #   security_analysis: true
