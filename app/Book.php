@@ -7,7 +7,7 @@ class Book
 {
   public string $title = '';
 
-  public function getTitle(): int {
+  public function getTitle(): string {
     return $this->title;
   }
 
