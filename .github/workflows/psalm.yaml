@@ -19,9 +19,10 @@ jobs:
               with:
                   persist-credentials: false
 
-            - name: "🧹 Run Psalm"
+            - name: '🧹 Run Psalm'
               uses: docker://ghcr.io/psalm/psalm-github-actions
               with:
-                composer_require_dev: true
-                composer_ignore_platform_reqs: true
-                # security_analysis: true
+                  composer_require_dev: true
+                  composer_ignore_platform_reqs: true
+                  relative_dir: ../
+                  # security_analysis: true
