@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7299f42646ea461e3a946105c31ecad2",
+    "content-hash": "258d87316dfa52543b46bccc44298e0c",
     "packages": [],
     "packages-dev": [
         {
@@ -814,6 +814,47 @@
                 }
             ],
             "time": "2024-08-03T19:31:26+00:00"
+        },
+        {
+            "name": "bafs/psalm-plugin-typecov",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BafS/psalm-typecov.git",
+                "reference": "3e2236e2801b7770520f4fac03b64d28cdf9c190"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BafS/psalm-typecov/zipball/3e2236e2801b7770520f4fac03b64d28cdf9c190",
+                "reference": "3e2236e2801b7770520f4fac03b64d28cdf9c190",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0",
+                "vimeo/psalm": "^5.0 || ^6.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.3"
+            },
+            "default-branch": true,
+            "type": "psalm-plugin",
+            "autoload": {
+                "psr-4": {
+                    "BafS\\PsalmTypecov\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Get nice type coverage reports",
+            "support": {
+                "issues": "https://github.com/BafS/psalm-typecov/issues",
+                "source": "https://github.com/BafS/psalm-typecov/tree/main"
+            },
+            "time": "2025-02-04T21:41:47+00:00"
         },
         {
             "name": "composer/pcre",
@@ -3201,10 +3242,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "bafs/psalm-plugin-typecov": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

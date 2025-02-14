@@ -14,4 +14,9 @@
             <directory name="vendor" />
         </ignoreFiles>
     </projectFiles>
+    <plugins>
+        <pluginClass class="BafS\PsalmTypecov\TypeCoverage">
+            <htmlReport output="index.html" />
+        </pluginClass>
+    </plugins>
 </psalm>
