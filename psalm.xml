@@ -16,7 +16,7 @@
     </projectFiles>
     <plugins>
         <pluginClass class="BafS\PsalmTypecov\TypeCoverage">
-            <htmlReport output="index.html" />
+            <htmlReport output="logs/psalms-coverage/index.html" />
         </pluginClass>
     </plugins>
 </psalm>
