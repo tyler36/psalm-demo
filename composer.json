@@ -9,6 +9,7 @@
         "lint:php:fix": "vendor/bin/psalter --issues=all"
     },
     "require-dev": {
-        "vimeo/psalm": "^6.2"
+        "vimeo/psalm": "^6.2",
+        "bafs/psalm-plugin-typecov": "dev-main"
     }
 }
