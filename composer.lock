@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "258d87316dfa52543b46bccc44298e0c",
+    "content-hash": "02a55cb48bff61a643f8d3c25248c910",
     "packages": [],
     "packages-dev": [
         {
@@ -817,7 +817,7 @@
         },
         {
             "name": "bafs/psalm-plugin-typecov",
-            "version": "dev-main",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BafS/psalm-typecov.git",
@@ -836,7 +836,6 @@
             "require-dev": {
                 "squizlabs/php_codesniffer": "^3.3"
             },
-            "default-branch": true,
             "type": "psalm-plugin",
             "autoload": {
                 "psr-4": {
@@ -852,7 +851,7 @@
             "description": "Get nice type coverage reports",
             "support": {
                 "issues": "https://github.com/BafS/psalm-typecov/issues",
-                "source": "https://github.com/BafS/psalm-typecov/tree/main"
+                "source": "https://github.com/BafS/psalm-typecov/tree/v1.0.0"
             },
             "time": "2025-02-04T21:41:47+00:00"
         },
@@ -3242,9 +3241,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "bafs/psalm-plugin-typecov": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

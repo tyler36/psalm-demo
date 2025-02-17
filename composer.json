@@ -10,6 +10,6 @@
     },
     "require-dev": {
         "vimeo/psalm": "^6.2",
-        "bafs/psalm-plugin-typecov": "dev-main"
+        "bafs/psalm-plugin-typecov": "^1.0"
     }
 }
