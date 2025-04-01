@@ -1,5 +1,8 @@
 # Psalm <!-- omit in toc -->
 
+[![linting](https://github.com/tyler36/psalm-demo/actions/workflows/psalm.yaml/badge.svg)](https://github.com/tyler36/psalm-demo/actions/workflows/psalm.yaml)
+[![Dependabot Updates](https://github.com/tyler36/psalm-demo/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/tyler36/psalm-demo/actions/workflows/dependabot/dependabot-updates)
+
 - [Overview](#overview)
 - [Installation](#installation)
 - [Usage](#usage)
