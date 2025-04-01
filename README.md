@@ -1,5 +1,7 @@
 # Psalm <!-- omit in toc -->
 
+[![linting](https://github.com/tyler36/psalm-demo/actions/workflows/psalm.yaml/badge.svg)](https://github.com/tyler36/psalm-demo/actions/workflows/psalm.yaml)
+
 - [Overview](#overview)
 - [Installation](#installation)
 - [Usage](#usage)
