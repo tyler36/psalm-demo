@@ -3,7 +3,7 @@
 /**
  * Class Book.
  */
-class Book
+final class Book
 {
   public string $title = '';
 
