@@ -1,6 +1,6 @@
 <?php
 
-$command = $_GET["data"];
+$command = serialize($_GET["data"]);
 
 getObject($command);
 
