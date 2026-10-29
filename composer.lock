@@ -826,21 +826,21 @@
         },
         {
             "name": "bafs/psalm-plugin-typecov",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/BafS/psalm-typecov.git",
-                "reference": "3e2236e2801b7770520f4fac03b64d28cdf9c190"
+                "reference": "a78714e32bc2baa5b40609a392016bc23aa6877e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BafS/psalm-typecov/zipball/3e2236e2801b7770520f4fac03b64d28cdf9c190",
-                "reference": "3e2236e2801b7770520f4fac03b64d28cdf9c190",
+                "url": "https://api.github.com/repos/BafS/psalm-typecov/zipball/a78714e32bc2baa5b40609a392016bc23aa6877e",
+                "reference": "a78714e32bc2baa5b40609a392016bc23aa6877e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.0",
-                "vimeo/psalm": "^5.0 || ^6.0"
+                "vimeo/psalm": "^5.0 || ^6.0 || ^7.0"
             },
             "require-dev": {
                 "squizlabs/php_codesniffer": "^3.3"
@@ -860,9 +860,9 @@
             "description": "Get nice type coverage reports",
             "support": {
                 "issues": "https://github.com/BafS/psalm-typecov/issues",
-                "source": "https://github.com/BafS/psalm-typecov/tree/v1.0.0"
+                "source": "https://github.com/BafS/psalm-typecov/tree/v1.1.0"
             },
-            "time": "2025-02-04T21:41:47+00:00"
+            "time": "2026-10-06T13:19:12+00:00"
         },
         {
             "name": "composer/pcre",
@@ -3305,16 +3305,16 @@
         },
         {
             "name": "vimeo/psalm",
-            "version": "6.20.1",
+            "version": "6.20.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vimeo/psalm.git",
-                "reference": "376425b8e67b79773add388e16b4f6be5693dc87"
+                "reference": "23d217da099cc4a9a3bd03b644c1adf520022375"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vimeo/psalm/zipball/376425b8e67b79773add388e16b4f6be5693dc87",
-                "reference": "376425b8e67b79773add388e16b4f6be5693dc87",
+                "url": "https://api.github.com/repos/vimeo/psalm/zipball/23d217da099cc4a9a3bd03b644c1adf520022375",
+                "reference": "23d217da099cc4a9a3bd03b644c1adf520022375",
                 "shasum": ""
             },
             "require": {
@@ -3419,7 +3419,7 @@
                 "issues": "https://github.com/vimeo/psalm/issues",
                 "source": "https://github.com/vimeo/psalm"
             },
-            "time": "2026-10-20T11:18:42+00:00"
+            "time": "2026-10-27T17:55:32+00:00"
         },
         {
             "name": "webmozart/assert",
